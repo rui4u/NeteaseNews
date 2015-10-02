@@ -7,50 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B03D66B1BBE210A00F90593 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B03D66A1BBE210A00F90593 /* main.m */; };
-		2B03D66E1BBE210A00F90593 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B03D66D1BBE210A00F90593 /* AppDelegate.m */; };
-		2B03D6711BBE210A00F90593 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B03D6701BBE210A00F90593 /* ViewController.m */; };
-		2B03D6741BBE210A00F90593 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B03D6721BBE210A00F90593 /* Main.storyboard */; };
-		2B03D6761BBE210A00F90593 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B03D6751BBE210A00F90593 /* Images.xcassets */; };
-		2B03D6791BBE210A00F90593 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B03D6771BBE210A00F90593 /* LaunchScreen.xib */; };
-		2B03D6851BBE210A00F90593 /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B03D6841BBE210A00F90593 /* __Tests.m */; };
+		2B03D6A51BBE343A00F90593 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B03D6A41BBE343A00F90593 /* main.m */; };
+		2B03D6A81BBE343A00F90593 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B03D6A71BBE343A00F90593 /* AppDelegate.m */; };
+		2B03D6AB1BBE343A00F90593 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B03D6AA1BBE343A00F90593 /* ViewController.m */; };
+		2B03D6AE1BBE343A00F90593 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B03D6AC1BBE343A00F90593 /* Main.storyboard */; };
+		2B03D6B01BBE343A00F90593 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B03D6AF1BBE343A00F90593 /* Images.xcassets */; };
+		2B03D6B31BBE343A00F90593 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B03D6B11BBE343A00F90593 /* LaunchScreen.xib */; };
+		2B03D6BF1BBE343A00F90593 /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B03D6BE1BBE343A00F90593 /* __Tests.m */; };
+		A3BD1099097D6B5CEEDE95C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7BA9BB936F08DC889B150F /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2B03D67F1BBE210A00F90593 /* PBXContainerItemProxy */ = {
+		2B03D6B91BBE343A00F90593 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2B03D65D1BBE210A00F90593 /* Project object */;
+			containerPortal = 2B03D6971BBE343A00F90593 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2B03D6641BBE210A00F90593;
+			remoteGlobalIDString = 2B03D69E1BBE343A00F90593;
 			remoteInfo = "新闻";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2B03D6651BBE210A00F90593 /* 新闻.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "新闻.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B03D6691BBE210A00F90593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B03D66A1BBE210A00F90593 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2B03D66C1BBE210A00F90593 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2B03D66D1BBE210A00F90593 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2B03D66F1BBE210A00F90593 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2B03D6701BBE210A00F90593 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2B03D6731BBE210A00F90593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2B03D6751BBE210A00F90593 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		2B03D6781BBE210A00F90593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		2B03D67E1BBE210A00F90593 /* 新闻Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "新闻Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B03D6831BBE210A00F90593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B03D6841BBE210A00F90593 /* __Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __Tests.m; sourceTree = "<group>"; };
+		1DD6B7D600599A9F87282EE0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		2B03D69F1BBE343A00F90593 /* 新闻.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "新闻.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B03D6A31BBE343A00F90593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B03D6A41BBE343A00F90593 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B03D6A61BBE343A00F90593 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2B03D6A71BBE343A00F90593 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2B03D6A91BBE343A00F90593 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2B03D6AA1BBE343A00F90593 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2B03D6AD1BBE343A00F90593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B03D6AF1BBE343A00F90593 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2B03D6B21BBE343A00F90593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2B03D6B81BBE343A00F90593 /* 新闻Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "新闻Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B03D6BD1BBE343A00F90593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B03D6BE1BBE343A00F90593 /* __Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __Tests.m; sourceTree = "<group>"; };
+		6D7BA9BB936F08DC889B150F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF0914EC31E4D0D54E6577C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2B03D6621BBE210A00F90593 /* Frameworks */ = {
+		2B03D69C1BBE343A00F90593 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3BD1099097D6B5CEEDE95C9 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2B03D67B1BBE210A00F90593 /* Frameworks */ = {
+		2B03D6B51BBE343A00F90593 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,75 +65,96 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2B03D65C1BBE210A00F90593 = {
+		2B03D6961BBE343A00F90593 = {
 			isa = PBXGroup;
 			children = (
-				2B03D6671BBE210A00F90593 /* 新闻 */,
-				2B03D6811BBE210A00F90593 /* 新闻Tests */,
-				2B03D6661BBE210A00F90593 /* Products */,
+				2B03D6A11BBE343A00F90593 /* 新闻 */,
+				2B03D6BB1BBE343A00F90593 /* 新闻Tests */,
+				2B03D6A01BBE343A00F90593 /* Products */,
+				72B1162A6BFC1A0DBFB96791 /* Pods */,
+				AA9643D7A88B3644E0AF35EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		2B03D6661BBE210A00F90593 /* Products */ = {
+		2B03D6A01BBE343A00F90593 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2B03D6651BBE210A00F90593 /* 新闻.app */,
-				2B03D67E1BBE210A00F90593 /* 新闻Tests.xctest */,
+				2B03D69F1BBE343A00F90593 /* 新闻.app */,
+				2B03D6B81BBE343A00F90593 /* 新闻Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2B03D6671BBE210A00F90593 /* 新闻 */ = {
+		2B03D6A11BBE343A00F90593 /* 新闻 */ = {
 			isa = PBXGroup;
 			children = (
-				2B03D66C1BBE210A00F90593 /* AppDelegate.h */,
-				2B03D66D1BBE210A00F90593 /* AppDelegate.m */,
-				2B03D66F1BBE210A00F90593 /* ViewController.h */,
-				2B03D6701BBE210A00F90593 /* ViewController.m */,
-				2B03D6721BBE210A00F90593 /* Main.storyboard */,
-				2B03D6751BBE210A00F90593 /* Images.xcassets */,
-				2B03D6771BBE210A00F90593 /* LaunchScreen.xib */,
-				2B03D6681BBE210A00F90593 /* Supporting Files */,
+				2B03D6A61BBE343A00F90593 /* AppDelegate.h */,
+				2B03D6A71BBE343A00F90593 /* AppDelegate.m */,
+				2B03D6A91BBE343A00F90593 /* ViewController.h */,
+				2B03D6AA1BBE343A00F90593 /* ViewController.m */,
+				2B03D6AC1BBE343A00F90593 /* Main.storyboard */,
+				2B03D6AF1BBE343A00F90593 /* Images.xcassets */,
+				2B03D6B11BBE343A00F90593 /* LaunchScreen.xib */,
+				2B03D6A21BBE343A00F90593 /* Supporting Files */,
 			);
 			path = "新闻";
 			sourceTree = "<group>";
 		};
-		2B03D6681BBE210A00F90593 /* Supporting Files */ = {
+		2B03D6A21BBE343A00F90593 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2B03D6691BBE210A00F90593 /* Info.plist */,
-				2B03D66A1BBE210A00F90593 /* main.m */,
+				2B03D6A31BBE343A00F90593 /* Info.plist */,
+				2B03D6A41BBE343A00F90593 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2B03D6811BBE210A00F90593 /* 新闻Tests */ = {
+		2B03D6BB1BBE343A00F90593 /* 新闻Tests */ = {
 			isa = PBXGroup;
 			children = (
-				2B03D6841BBE210A00F90593 /* __Tests.m */,
-				2B03D6821BBE210A00F90593 /* Supporting Files */,
+				2B03D6BE1BBE343A00F90593 /* __Tests.m */,
+				2B03D6BC1BBE343A00F90593 /* Supporting Files */,
 			);
 			path = "新闻Tests";
 			sourceTree = "<group>";
 		};
-		2B03D6821BBE210A00F90593 /* Supporting Files */ = {
+		2B03D6BC1BBE343A00F90593 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2B03D6831BBE210A00F90593 /* Info.plist */,
+				2B03D6BD1BBE343A00F90593 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		72B1162A6BFC1A0DBFB96791 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BAF0914EC31E4D0D54E6577C /* Pods.debug.xcconfig */,
+				1DD6B7D600599A9F87282EE0 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AA9643D7A88B3644E0AF35EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D7BA9BB936F08DC889B150F /* libPods.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2B03D6641BBE210A00F90593 /* 新闻 */ = {
+		2B03D69E1BBE343A00F90593 /* 新闻 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B03D6881BBE210A00F90593 /* Build configuration list for PBXNativeTarget "新闻" */;
+			buildConfigurationList = 2B03D6C21BBE343A00F90593 /* Build configuration list for PBXNativeTarget "新闻" */;
 			buildPhases = (
-				2B03D6611BBE210A00F90593 /* Sources */,
-				2B03D6621BBE210A00F90593 /* Frameworks */,
-				2B03D6631BBE210A00F90593 /* Resources */,
+				5352ED5C39BB82E9B971D48D /* Check Pods Manifest.lock */,
+				2B03D69B1BBE343A00F90593 /* Sources */,
+				2B03D69C1BBE343A00F90593 /* Frameworks */,
+				2B03D69D1BBE343A00F90593 /* Resources */,
+				204E7C47C36B5BA4BEB4D913 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,46 +162,46 @@
 			);
 			name = "新闻";
 			productName = "新闻";
-			productReference = 2B03D6651BBE210A00F90593 /* 新闻.app */;
+			productReference = 2B03D69F1BBE343A00F90593 /* 新闻.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2B03D67D1BBE210A00F90593 /* 新闻Tests */ = {
+		2B03D6B71BBE343A00F90593 /* 新闻Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B03D68B1BBE210A00F90593 /* Build configuration list for PBXNativeTarget "新闻Tests" */;
+			buildConfigurationList = 2B03D6C51BBE343A00F90593 /* Build configuration list for PBXNativeTarget "新闻Tests" */;
 			buildPhases = (
-				2B03D67A1BBE210A00F90593 /* Sources */,
-				2B03D67B1BBE210A00F90593 /* Frameworks */,
-				2B03D67C1BBE210A00F90593 /* Resources */,
+				2B03D6B41BBE343A00F90593 /* Sources */,
+				2B03D6B51BBE343A00F90593 /* Frameworks */,
+				2B03D6B61BBE343A00F90593 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2B03D6801BBE210A00F90593 /* PBXTargetDependency */,
+				2B03D6BA1BBE343A00F90593 /* PBXTargetDependency */,
 			);
 			name = "新闻Tests";
 			productName = "新闻Tests";
-			productReference = 2B03D67E1BBE210A00F90593 /* 新闻Tests.xctest */;
+			productReference = 2B03D6B81BBE343A00F90593 /* 新闻Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2B03D65D1BBE210A00F90593 /* Project object */ = {
+		2B03D6971BBE343A00F90593 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "沙睿";
 				TargetAttributes = {
-					2B03D6641BBE210A00F90593 = {
+					2B03D69E1BBE343A00F90593 = {
 						CreatedOnToolsVersion = 6.4;
 					};
-					2B03D67D1BBE210A00F90593 = {
+					2B03D6B71BBE343A00F90593 = {
 						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 2B03D6641BBE210A00F90593;
+						TestTargetID = 2B03D69E1BBE343A00F90593;
 					};
 				};
 			};
-			buildConfigurationList = 2B03D6601BBE210A00F90593 /* Build configuration list for PBXProject "新闻" */;
+			buildConfigurationList = 2B03D69A1BBE343A00F90593 /* Build configuration list for PBXProject "新闻" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -183,29 +209,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 2B03D65C1BBE210A00F90593;
-			productRefGroup = 2B03D6661BBE210A00F90593 /* Products */;
+			mainGroup = 2B03D6961BBE343A00F90593;
+			productRefGroup = 2B03D6A01BBE343A00F90593 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2B03D6641BBE210A00F90593 /* 新闻 */,
-				2B03D67D1BBE210A00F90593 /* 新闻Tests */,
+				2B03D69E1BBE343A00F90593 /* 新闻 */,
+				2B03D6B71BBE343A00F90593 /* 新闻Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2B03D6631BBE210A00F90593 /* Resources */ = {
+		2B03D69D1BBE343A00F90593 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B03D6741BBE210A00F90593 /* Main.storyboard in Resources */,
-				2B03D6791BBE210A00F90593 /* LaunchScreen.xib in Resources */,
-				2B03D6761BBE210A00F90593 /* Images.xcassets in Resources */,
+				2B03D6AE1BBE343A00F90593 /* Main.storyboard in Resources */,
+				2B03D6B31BBE343A00F90593 /* LaunchScreen.xib in Resources */,
+				2B03D6B01BBE343A00F90593 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2B03D67C1BBE210A00F90593 /* Resources */ = {
+		2B03D6B61BBE343A00F90593 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -214,48 +240,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		204E7C47C36B5BA4BEB4D913 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5352ED5C39BB82E9B971D48D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		2B03D6611BBE210A00F90593 /* Sources */ = {
+		2B03D69B1BBE343A00F90593 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B03D6711BBE210A00F90593 /* ViewController.m in Sources */,
-				2B03D66E1BBE210A00F90593 /* AppDelegate.m in Sources */,
-				2B03D66B1BBE210A00F90593 /* main.m in Sources */,
+				2B03D6AB1BBE343A00F90593 /* ViewController.m in Sources */,
+				2B03D6A81BBE343A00F90593 /* AppDelegate.m in Sources */,
+				2B03D6A51BBE343A00F90593 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2B03D67A1BBE210A00F90593 /* Sources */ = {
+		2B03D6B41BBE343A00F90593 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B03D6851BBE210A00F90593 /* __Tests.m in Sources */,
+				2B03D6BF1BBE343A00F90593 /* __Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2B03D6801BBE210A00F90593 /* PBXTargetDependency */ = {
+		2B03D6BA1BBE343A00F90593 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2B03D6641BBE210A00F90593 /* 新闻 */;
-			targetProxy = 2B03D67F1BBE210A00F90593 /* PBXContainerItemProxy */;
+			target = 2B03D69E1BBE343A00F90593 /* 新闻 */;
+			targetProxy = 2B03D6B91BBE343A00F90593 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2B03D6721BBE210A00F90593 /* Main.storyboard */ = {
+		2B03D6AC1BBE343A00F90593 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2B03D6731BBE210A00F90593 /* Base */,
+				2B03D6AD1BBE343A00F90593 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		2B03D6771BBE210A00F90593 /* LaunchScreen.xib */ = {
+		2B03D6B11BBE343A00F90593 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2B03D6781BBE210A00F90593 /* Base */,
+				2B03D6B21BBE343A00F90593 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -263,7 +322,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2B03D6861BBE210A00F90593 /* Debug */ = {
+		2B03D6C01BBE343A00F90593 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -307,7 +366,7 @@
 			};
 			name = Debug;
 		};
-		2B03D6871BBE210A00F90593 /* Release */ = {
+		2B03D6C11BBE343A00F90593 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -345,8 +404,9 @@
 			};
 			name = Release;
 		};
-		2B03D6891BBE210A00F90593 /* Debug */ = {
+		2B03D6C31BBE343A00F90593 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAF0914EC31E4D0D54E6577C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "新闻/Info.plist";
@@ -355,8 +415,9 @@
 			};
 			name = Debug;
 		};
-		2B03D68A1BBE210A00F90593 /* Release */ = {
+		2B03D6C41BBE343A00F90593 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DD6B7D600599A9F87282EE0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "新闻/Info.plist";
@@ -365,7 +426,7 @@
 			};
 			name = Release;
 		};
-		2B03D68C1BBE210A00F90593 /* Debug */ = {
+		2B03D6C61BBE343A00F90593 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -384,7 +445,7 @@
 			};
 			name = Debug;
 		};
-		2B03D68D1BBE210A00F90593 /* Release */ = {
+		2B03D6C71BBE343A00F90593 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -402,32 +463,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2B03D6601BBE210A00F90593 /* Build configuration list for PBXProject "新闻" */ = {
+		2B03D69A1BBE343A00F90593 /* Build configuration list for PBXProject "新闻" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2B03D6861BBE210A00F90593 /* Debug */,
-				2B03D6871BBE210A00F90593 /* Release */,
+				2B03D6C01BBE343A00F90593 /* Debug */,
+				2B03D6C11BBE343A00F90593 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2B03D6881BBE210A00F90593 /* Build configuration list for PBXNativeTarget "新闻" */ = {
+		2B03D6C21BBE343A00F90593 /* Build configuration list for PBXNativeTarget "新闻" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2B03D6891BBE210A00F90593 /* Debug */,
-				2B03D68A1BBE210A00F90593 /* Release */,
+				2B03D6C31BBE343A00F90593 /* Debug */,
+				2B03D6C41BBE343A00F90593 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		2B03D68B1BBE210A00F90593 /* Build configuration list for PBXNativeTarget "新闻Tests" */ = {
+		2B03D6C51BBE343A00F90593 /* Build configuration list for PBXNativeTarget "新闻Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2B03D68C1BBE210A00F90593 /* Debug */,
-				2B03D68D1BBE210A00F90593 /* Release */,
+				2B03D6C61BBE343A00F90593 /* Debug */,
+				2B03D6C71BBE343A00F90593 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2B03D65D1BBE210A00F90593 /* Project object */;
+	rootObject = 2B03D6971BBE343A00F90593 /* Project object */;
 }
