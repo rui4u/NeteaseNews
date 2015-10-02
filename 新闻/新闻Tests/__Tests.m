@@ -1,19 +1,19 @@
 //
-//  NeteaseNewsTests.m
-//  NeteaseNewsTests
+//  __Tests.m
+//  新闻Tests
 //
-//  Created by 沙睿 on 15/9/29.
+//  Created by 沙睿 on 15/10/2.
 //  Copyright (c) 2015年 沙睿. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface NeteaseNewsTests : XCTestCase
+@interface __Tests : XCTestCase
 
 @end
 
-@implementation NeteaseNewsTests
+@implementation __Tests
 
 - (void)setUp {
     [super setUp];
