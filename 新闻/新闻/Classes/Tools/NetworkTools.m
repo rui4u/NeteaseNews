@@ -18,6 +18,8 @@
         //但后面要以/结尾
         NSURL *url = [NSURL URLWithString:@"http://c.m.163.com/nc/article/headline/"];
         instanct = [[self alloc] initWithBaseURL:url];
+        //添加解析的数据格式  AFN 为了避免出错，默认只支持三种类型的JSON的解析类型，可以用一下方法来添加
+        instanct.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html", nil];
     });
     return instanct;
 }
