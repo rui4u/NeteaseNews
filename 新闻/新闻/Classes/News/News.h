@@ -17,7 +17,7 @@
 @property (nonatomic, assign) int relpyCount;
 ///配图地址
 @property (nonatomic, copy) NSString *imgsrc;
-
+@property (nonatomic, copy) NSString *haha;
 + (instancetype)newsWithDict:(NSDictionary *)dict;
 //加载制定URL 的新闻数组
 + (void)loadNewsListWithURLString:(NSString *)urlString;
