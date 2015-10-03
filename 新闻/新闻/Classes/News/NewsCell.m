@@ -14,15 +14,33 @@
 @property (weak, nonatomic) IBOutlet UILabel *digestLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *replyLabel;
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *extraImageViews;
 
 @end
 @implementation NewsCell
+
++ (NSString *)cellIdentifierWithNews:(News *)news {
+    if (news.imgextra.count == 2) {
+        return @"ImagesCell";
+    }
+    return @"NewsCell";
+}
 - (void)setNews:(News *)news {
     _news = news;
     self.titleLabel.text = news.title;
     self.digestLabel.text = news.digest;
     self.replyLabel.text = [NSString stringWithFormat:@"%d",news.replyCount];
     [self.iconView setImageWithURL:[NSURL URLWithString:news.imgsrc]];
+    if (news.imgextra.count == 2) {
+        int index = 0;
+        for (UIImageView * image in self.extraImageViews) {
+            NSString *str = news.imgextra[index][@"imgsrc"];
+            NSURL *url = [NSURL URLWithString:str];
+            [image setImageWithURL:url];
+            index++;
+        }
+    }
+    
 }
 
 - (void)awakeFromNib {

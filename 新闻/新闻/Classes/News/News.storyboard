@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsCell" rowHeight="80" id="DyQ-Rx-aiL" customClass="NewsCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCell" rowHeight="80" id="DyQ-Rx-aiL" customClass="NewsCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DyQ-Rx-aiL" id="DWX-na-0Eb">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -49,6 +49,7 @@
                                         <constraint firstItem="Q0D-Qb-qyn" firstAttribute="leading" secondItem="DWX-na-0Eb" secondAttribute="leadingMargin" constant="2" id="GIt-0q-sv0"/>
                                         <constraint firstItem="UoI-VY-geP" firstAttribute="leading" secondItem="Q0D-Qb-qyn" secondAttribute="trailing" constant="10" id="Haq-xx-DZX"/>
                                         <constraint firstItem="P6h-JU-JB8" firstAttribute="bottom" secondItem="Q0D-Qb-qyn" secondAttribute="bottom" id="JFV-W5-R9R"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Q0D-Qb-qyn" secondAttribute="bottom" constant="1" id="Jbe-x1-I88"/>
                                         <constraint firstItem="UoI-VY-geP" firstAttribute="top" secondItem="Q0D-Qb-qyn" secondAttribute="top" id="Qdo-6v-q9V"/>
                                         <constraint firstItem="Q0D-Qb-qyn" firstAttribute="top" secondItem="DWX-na-0Eb" secondAttribute="topMargin" constant="2" id="Uka-eh-6J2"/>
                                         <constraint firstAttribute="bottom" secondItem="DGm-Io-yER" secondAttribute="bottom" constant="10" id="VK6-pO-Dte"/>
@@ -61,6 +62,63 @@
                                     <outlet property="iconView" destination="Q0D-Qb-qyn" id="uuz-ju-hdH"/>
                                     <outlet property="replyLabel" destination="DGm-Io-yER" id="nBd-ac-9ul"/>
                                     <outlet property="titleLabel" destination="UoI-VY-geP" id="cUZ-1c-7sr"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImagesCell" rowHeight="112" id="ZfP-M4-vtz" customClass="NewsCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZfP-M4-vtz" id="r0H-ZI-HT4">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fxp-DO-Pkq" userLabel="配图">
+                                            <rect key="frame" x="213" y="28" width="185" height="75"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yFU-Ir-809" userLabel="配图">
+                                            <rect key="frame" x="406" y="28" width="184" height="75"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k17-Qf-0w0" userLabel="标题">
+                                            <rect key="frame" x="10" y="5" width="38" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPd-Z8-DTg" userLabel="点击量">
+                                            <rect key="frame" x="559" y="8" width="33" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="71S-Zq-rHZ" userLabel="配图">
+                                            <rect key="frame" x="21" y="28" width="184" height="75"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="75" id="o7Q-Nj-EMa"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="yFU-Ir-809" firstAttribute="height" secondItem="fxp-DO-Pkq" secondAttribute="height" id="1tM-CZ-nqR"/>
+                                        <constraint firstItem="kPd-Z8-DTg" firstAttribute="trailing" secondItem="r0H-ZI-HT4" secondAttribute="trailingMargin" id="9X4-wW-7cb"/>
+                                        <constraint firstItem="71S-Zq-rHZ" firstAttribute="bottom" secondItem="r0H-ZI-HT4" secondAttribute="bottomMargin" id="BKI-uz-QQq"/>
+                                        <constraint firstItem="k17-Qf-0w0" firstAttribute="leading" secondItem="r0H-ZI-HT4" secondAttribute="leading" constant="10" id="GBB-a9-oDl"/>
+                                        <constraint firstItem="k17-Qf-0w0" firstAttribute="leading" secondItem="71S-Zq-rHZ" secondAttribute="leading" constant="-11" id="IW2-On-EF2"/>
+                                        <constraint firstItem="fxp-DO-Pkq" firstAttribute="centerY" secondItem="71S-Zq-rHZ" secondAttribute="centerY" id="Qgy-sR-Jnp"/>
+                                        <constraint firstItem="kPd-Z8-DTg" firstAttribute="top" secondItem="r0H-ZI-HT4" secondAttribute="topMargin" id="U2a-Ej-hRL"/>
+                                        <constraint firstItem="yFU-Ir-809" firstAttribute="centerY" secondItem="fxp-DO-Pkq" secondAttribute="centerY" id="Vc8-r4-kOl"/>
+                                        <constraint firstItem="yFU-Ir-809" firstAttribute="leading" secondItem="fxp-DO-Pkq" secondAttribute="trailing" constant="8" id="Wy3-Qf-HvQ"/>
+                                        <constraint firstItem="yFU-Ir-809" firstAttribute="width" secondItem="fxp-DO-Pkq" secondAttribute="width" id="ayj-6N-u0I"/>
+                                        <constraint firstAttribute="trailing" secondItem="yFU-Ir-809" secondAttribute="trailing" constant="10" id="bgJ-Fi-K4Z"/>
+                                        <constraint firstItem="fxp-DO-Pkq" firstAttribute="leading" secondItem="71S-Zq-rHZ" secondAttribute="trailing" constant="8" id="cgk-An-Vwl"/>
+                                        <constraint firstItem="fxp-DO-Pkq" firstAttribute="width" secondItem="71S-Zq-rHZ" secondAttribute="width" id="dyw-Nn-FeW"/>
+                                        <constraint firstItem="71S-Zq-rHZ" firstAttribute="top" secondItem="k17-Qf-0w0" secondAttribute="bottom" constant="5" id="fG9-ft-WDp"/>
+                                        <constraint firstItem="k17-Qf-0w0" firstAttribute="top" secondItem="r0H-ZI-HT4" secondAttribute="top" constant="5" id="iQG-r1-D9i"/>
+                                        <constraint firstItem="fxp-DO-Pkq" firstAttribute="height" secondItem="71S-Zq-rHZ" secondAttribute="height" id="lfQ-I5-SRX"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="iconView" destination="71S-Zq-rHZ" id="wca-by-2k1"/>
+                                    <outlet property="replyLabel" destination="kPd-Z8-DTg" id="cg6-dN-Zk1"/>
+                                    <outlet property="titleLabel" destination="k17-Qf-0w0" id="Dge-h7-mdJ"/>
+                                    <outletCollection property="extraImageViews" destination="fxp-DO-Pkq" id="nZX-23-F6Q"/>
+                                    <outletCollection property="extraImageViews" destination="yFU-Ir-809" id="eiG-wX-YcK"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

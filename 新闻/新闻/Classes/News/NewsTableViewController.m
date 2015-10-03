@@ -26,6 +26,9 @@
     [News loadNewsListWithURLString:@"T1348647853363/0-20.html" finished:^(NSArray *newsList) {
         self.newsList = newsList;
     }];
+    //设置自动行高
+    self.tableView.estimatedRowHeight=80;
+    self.tableView.rowHeight=UITableViewAutomaticDimension;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,8 +43,10 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-   NewsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"newsCell" forIndexPath:indexPath];
-    cell.news = self.newsList[indexPath.row];
+    News *n = self.newsList[indexPath.row];
+    NSString *ID = [NewsCell cellIdentifierWithNews:n];
+   NewsCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
+    cell.news = n;
     return cell;
 }
 

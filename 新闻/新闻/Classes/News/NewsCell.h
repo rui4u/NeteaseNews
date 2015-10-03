@@ -10,4 +10,6 @@
 @class News;
 @interface NewsCell : UITableViewCell
 @property (nonatomic, strong) News *news;
+
++ (NSString *)cellIdentifierWithNews:(News *)news;
 @end
