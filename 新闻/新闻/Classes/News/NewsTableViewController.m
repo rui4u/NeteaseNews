@@ -8,16 +8,24 @@
 
 #import "NewsTableViewController.h"
 #import "News.h"
+#import "NewsCell.h"
 @interface NewsTableViewController ()
-
+@property (nonatomic, strong) NSArray *newsList;
 @end
 
 @implementation NewsTableViewController
 
+- (void)setNewsList:(NSArray *)newsList {
+    _newsList = newsList;
+    [self.tableView reloadData];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     //测试加载新闻
-    [News loadNewsListWithURLString:@"T1348647853363/0-20.html"];
+    [News loadNewsListWithURLString:@"T1348647853363/0-20.html" finished:^(NSArray *newsList) {
+        self.newsList = newsList;
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,29 +33,17 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return self.newsList.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+   NewsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"newsCell" forIndexPath:indexPath];
+    cell.news = self.newsList[indexPath.row];
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.

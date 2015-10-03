@@ -14,11 +14,11 @@
 //新闻摘要
 @property (nonatomic, copy) NSString *digest;
 //跟帖数量
-@property (nonatomic, assign) int relpyCount;
+@property (nonatomic, assign) int replyCount;
 ///配图地址
 @property (nonatomic, copy) NSString *imgsrc;
 @property (nonatomic, copy) NSString *haha;
 + (instancetype)newsWithDict:(NSDictionary *)dict;
 //加载制定URL 的新闻数组
-+ (void)loadNewsListWithURLString:(NSString *)urlString;
++ (void)loadNewsListWithURLString:(NSString *)urlString finished:(void (^)(NSArray *newsList)) finished;
 @end

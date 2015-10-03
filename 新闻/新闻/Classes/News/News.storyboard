@@ -2,22 +2,66 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3i6-bq-3Nq">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--News Table View Controller-->
         <scene sceneID="PR5-WO-g3A">
             <objects>
                 <tableViewController id="3i6-bq-3Nq" customClass="NewsTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="HC1-HJ-KDx">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="HC1-HJ-KDx">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCell" id="DyQ-Rx-aiL">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsCell" rowHeight="80" id="DyQ-Rx-aiL" customClass="NewsCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DyQ-Rx-aiL" id="DWX-na-0Eb">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q0D-Qb-qyn" userLabel="配图">
+                                            <rect key="frame" x="10" y="10" width="80" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="XM8-ct-9Dr"/>
+                                                <constraint firstAttribute="height" constant="60" id="gbq-D3-QdN"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UoI-VY-geP" userLabel="标题">
+                                            <rect key="frame" x="100" y="10" width="38" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6h-JU-JB8" userLabel="简介">
+                                            <rect key="frame" x="100" y="54" width="33" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGm-Io-yER" userLabel="点击量">
+                                            <rect key="frame" x="557" y="53" width="33" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Q0D-Qb-qyn" firstAttribute="leading" secondItem="DWX-na-0Eb" secondAttribute="leadingMargin" constant="2" id="GIt-0q-sv0"/>
+                                        <constraint firstItem="UoI-VY-geP" firstAttribute="leading" secondItem="Q0D-Qb-qyn" secondAttribute="trailing" constant="10" id="Haq-xx-DZX"/>
+                                        <constraint firstItem="P6h-JU-JB8" firstAttribute="bottom" secondItem="Q0D-Qb-qyn" secondAttribute="bottom" id="JFV-W5-R9R"/>
+                                        <constraint firstItem="UoI-VY-geP" firstAttribute="top" secondItem="Q0D-Qb-qyn" secondAttribute="top" id="Qdo-6v-q9V"/>
+                                        <constraint firstItem="Q0D-Qb-qyn" firstAttribute="top" secondItem="DWX-na-0Eb" secondAttribute="topMargin" constant="2" id="Uka-eh-6J2"/>
+                                        <constraint firstAttribute="bottom" secondItem="DGm-Io-yER" secondAttribute="bottom" constant="10" id="VK6-pO-Dte"/>
+                                        <constraint firstItem="P6h-JU-JB8" firstAttribute="leading" secondItem="Q0D-Qb-qyn" secondAttribute="trailing" constant="10" id="Xos-Uq-Kc0"/>
+                                        <constraint firstAttribute="trailing" secondItem="DGm-Io-yER" secondAttribute="trailing" constant="10" id="fc3-6F-zEk"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="digestLabel" destination="P6h-JU-JB8" id="Ht0-GW-jRE"/>
+                                    <outlet property="iconView" destination="Q0D-Qb-qyn" id="uuz-ju-hdH"/>
+                                    <outlet property="replyLabel" destination="DGm-Io-yER" id="nBd-ac-9ul"/>
+                                    <outlet property="titleLabel" destination="UoI-VY-geP" id="cUZ-1c-7sr"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

@@ -17,6 +17,7 @@
 		2B03D6D21BBE562000F90593 /* NetworkTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B03D6D11BBE562000F90593 /* NetworkTools.m */; };
 		2B03D6D51BBE59C400F90593 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B03D6D41BBE59C400F90593 /* News.m */; };
 		2B03D6D91BBE5E1900F90593 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B03D6D81BBE5E1900F90593 /* NSArray+Log.m */; };
+		2BF765E41BBFB8D800F8021F /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF765E31BBFB8D800F8021F /* NewsCell.m */; };
 		A3BD1099097D6B5CEEDE95C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7BA9BB936F08DC889B150F /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,8 @@
 		2B03D6D41BBE59C400F90593 /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
 		2B03D6D71BBE5E1900F90593 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		2B03D6D81BBE5E1900F90593 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		2BF765E21BBFB8D800F8021F /* NewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
+		2BF765E31BBFB8D800F8021F /* NewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
 		6D7BA9BB936F08DC889B150F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF0914EC31E4D0D54E6577C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,6 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				2B03D6CA1BBE36D800F90593 /* News.storyboard */,
+				2BF765E21BBFB8D800F8021F /* NewsCell.h */,
+				2BF765E31BBFB8D800F8021F /* NewsCell.m */,
 				2B03D6CC1BBE36E800F90593 /* NewsTableViewController.h */,
 				2B03D6CD1BBE36E800F90593 /* NewsTableViewController.m */,
 				2B03D6D31BBE59C400F90593 /* News.h */,
@@ -328,6 +333,7 @@
 				2B03D6D51BBE59C400F90593 /* News.m in Sources */,
 				2B03D6D21BBE562000F90593 /* NetworkTools.m in Sources */,
 				2B03D6CE1BBE36E800F90593 /* NewsTableViewController.m in Sources */,
+				2BF765E41BBFB8D800F8021F /* NewsCell.m in Sources */,
 				2B03D6D91BBE5E1900F90593 /* NSArray+Log.m in Sources */,
 				2B03D6A81BBE343A00F90593 /* AppDelegate.m in Sources */,
 				2B03D6A51BBE343A00F90593 /* main.m in Sources */,
