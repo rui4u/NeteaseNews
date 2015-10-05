@@ -9,6 +9,11 @@
 #import "Channel.h"
 #import "NSObject+Extension.h"
 @implementation Channel
+
+- (void)setStrURL:(NSString *)strURL{
+    _strURL = self.tid.copy;
+    NSLog(@"%@!!",_strURL);
+}
 + (NSArray *)channelList {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"topic_news.json" ofType:nil];
     NSData *data = [NSData dataWithContentsOfFile:path];

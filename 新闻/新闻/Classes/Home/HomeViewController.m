@@ -66,6 +66,8 @@
     
     ChannelCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CollectionCell" forIndexPath:indexPath];
     cell.backgroundColor = [UIColor colorWithRed:((float)arc4random_uniform(256) / 255.0) green:((float)arc4random_uniform(256) / 255.0) blue:((float)arc4random_uniform(256) / 255.0) alpha:1.0];
+    cell.strURL = [self.channelList[indexPath.item] tid];
+
     return cell;
 }
 #pragma mark - 懒加载

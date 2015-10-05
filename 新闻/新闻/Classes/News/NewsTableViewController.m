@@ -14,7 +14,17 @@
 @end
 
 @implementation NewsTableViewController
-
+- (void)setStrURL:(NSString *)strURL {
+    _strURL = strURL;
+    //@"T1348647853363/0-20.html"
+    NSLog(@"%@--",strURL);
+    [News loadNewsListWithURLString:[NSString stringWithFormat:@"%@/0-20.html",strURL] finished:^(NSArray *newsList) {
+        self.newsList = newsList;
+    }];
+    //设置自动行高
+    self.tableView.estimatedRowHeight=80;
+    self.tableView.rowHeight=UITableViewAutomaticDimension;
+}
 - (void)setNewsList:(NSArray *)newsList {
     _newsList = newsList;
     [self.tableView reloadData];
@@ -23,12 +33,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //测试加载新闻
-    [News loadNewsListWithURLString:@"T1348647853363/0-20.html" finished:^(NSArray *newsList) {
-        self.newsList = newsList;
-    }];
-    //设置自动行高
-    self.tableView.estimatedRowHeight=80;
-    self.tableView.rowHeight=UITableViewAutomaticDimension;
+    
 }
 
 - (void)didReceiveMemoryWarning {
