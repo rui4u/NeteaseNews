@@ -19,6 +19,8 @@
 @property (nonatomic, copy) NSString *imgsrc;
 //多图
 @property (nonatomic, strong) NSArray *imgextra;
+//大图
+@property (nonatomic, assign, getter=isBigImage) BOOL imgType;
 + (instancetype)newsWithDict:(NSDictionary *)dict;
 //加载制定URL 的新闻数组
 + (void)loadNewsListWithURLString:(NSString *)urlString finished:(void (^)(NSArray *newsList)) finished;

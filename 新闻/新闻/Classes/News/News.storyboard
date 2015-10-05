@@ -64,6 +64,57 @@
                                     <outlet property="titleLabel" destination="UoI-VY-geP" id="cUZ-1c-7sr"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BigImageCell" rowHeight="180" id="Fmg-Rn-e3J" customClass="NewsCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fmg-Rn-e3J" id="X5p-yB-ekq">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qap-Wx-Jxq" userLabel="配图">
+                                            <rect key="frame" x="8" y="31" width="584" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="g5c-qY-fQd"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NmR-eh-AcF" userLabel="标题">
+                                            <rect key="frame" x="8" y="8" width="38" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imj-te-GsR" userLabel="点击量">
+                                            <rect key="frame" x="552" y="154" width="33" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qis-Ue-Spd" userLabel="简介">
+                                            <rect key="frame" x="8" y="139" width="33" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="imj-te-GsR" firstAttribute="top" secondItem="Qap-Wx-Jxq" secondAttribute="bottom" constant="23" id="2kP-Dl-nS1"/>
+                                        <constraint firstItem="NmR-eh-AcF" firstAttribute="top" secondItem="X5p-yB-ekq" secondAttribute="topMargin" id="3o5-j2-w6i"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="imj-te-GsR" secondAttribute="trailing" constant="7" id="5dH-fu-fX6"/>
+                                        <constraint firstItem="Qap-Wx-Jxq" firstAttribute="top" secondItem="NmR-eh-AcF" secondAttribute="bottom" constant="5" id="6YE-8e-EyH"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="imj-te-GsR" secondAttribute="bottom" constant="1" id="BE7-sw-93v"/>
+                                        <constraint firstItem="qis-Ue-Spd" firstAttribute="top" secondItem="Qap-Wx-Jxq" secondAttribute="bottom" constant="8" id="RSO-KA-Sgz"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="qis-Ue-Spd" secondAttribute="bottom" constant="16" id="UUj-rc-FZU"/>
+                                        <constraint firstItem="NmR-eh-AcF" firstAttribute="leading" secondItem="X5p-yB-ekq" secondAttribute="leadingMargin" id="VIU-qo-TLG"/>
+                                        <constraint firstItem="Qap-Wx-Jxq" firstAttribute="trailing" secondItem="X5p-yB-ekq" secondAttribute="trailingMargin" id="fj4-61-zjG"/>
+                                        <constraint firstItem="qis-Ue-Spd" firstAttribute="leading" secondItem="Qap-Wx-Jxq" secondAttribute="leading" id="rYa-FG-qou"/>
+                                        <constraint firstItem="NmR-eh-AcF" firstAttribute="leading" secondItem="Qap-Wx-Jxq" secondAttribute="leading" id="wkl-XX-OYi"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="digestLabel" destination="qis-Ue-Spd" id="xBM-Jv-5qH"/>
+                                    <outlet property="iconView" destination="Qap-Wx-Jxq" id="obP-sS-yP7"/>
+                                    <outlet property="replyLabel" destination="imj-te-GsR" id="hMU-ia-Fcg"/>
+                                    <outlet property="titleLabel" destination="NmR-eh-AcF" id="v5r-S4-sbx"/>
+                                </connections>
+                            </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImagesCell" rowHeight="112" id="ZfP-M4-vtz" customClass="NewsCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZfP-M4-vtz" id="r0H-ZI-HT4">
