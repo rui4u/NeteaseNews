@@ -24,7 +24,9 @@
     for (NSDictionary *obj in array) {
         [arrayM addObject:[self ObjectWithDict:obj]];
     }
-    return arrayM.copy;
+    return [arrayM sortedArrayUsingComparator:^NSComparisonResult(Channel *obj1, Channel *obj2) {
+        return [obj1.tid compare:obj2.tid];
+    }];
 }
 
 - (NSString *)description {
