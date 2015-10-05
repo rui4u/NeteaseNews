@@ -8,7 +8,13 @@
 
 #import "HomeViewController.h"
 #import "Channel.h"
+#import "ChannelLabel.h"
 @interface HomeViewController ()
+
+//频道数据
+@property (nonatomic, strong) NSArray *channelList;
+//频道视图
+@property (weak, nonatomic) IBOutlet UIScrollView *channelView;
 
 @end
 
@@ -17,21 +23,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"%@",[Channel channelList]);
+    [self setupChannel];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setupChannel {
+    
+    //取消scrollView的缩进
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    CGFloat margin = 8.0;
+    CGFloat x =margin;
+    CGFloat h = self.channelView.bounds.size.height;
+    for (Channel * channel in self.channelList) {
+        ChannelLabel *l = [ChannelLabel channelLableWithTitle:channel.tname];
+        l.frame = CGRectMake(x, 0, l.bounds.size.width,h);
+        x += l.frame.size.width;
+        [self.channelView addSubview:l];
+    }
+    self.channelView.contentSize = CGSizeMake(x+margin, h);
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - 懒加载
+- (NSArray *)channelList {
+    if (_channelList ==nil) {
+        _channelList = [Channel channelList];
+    }
+    return _channelList;
 }
-*/
 
 @end

@@ -23,6 +23,7 @@
 		2BF9C6D91BC237880044450D /* Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9C6D81BC237880044450D /* Channel.m */; };
 		2BF9C6DE1BC2392D0044450D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9C6DD1BC2392D0044450D /* HomeViewController.m */; };
 		2BF9C6E21BC2394F0044450D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9C6E11BC2394F0044450D /* Home.storyboard */; };
+		2BF9C6E51BC26EEC0044450D /* ChannelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9C6E41BC26EEC0044450D /* ChannelLabel.m */; };
 		A3BD1099097D6B5CEEDE95C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7BA9BB936F08DC889B150F /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,8 @@
 		2BF9C6DC1BC2392D0044450D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		2BF9C6DD1BC2392D0044450D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		2BF9C6E11BC2394F0044450D /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		2BF9C6E31BC26EEC0044450D /* ChannelLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelLabel.h; sourceTree = "<group>"; };
+		2BF9C6E41BC26EEC0044450D /* ChannelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelLabel.m; sourceTree = "<group>"; };
 		6D7BA9BB936F08DC889B150F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF0914EC31E4D0D54E6577C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -211,6 +214,8 @@
 				2BF9C6D21BC22DDB0044450D /* topic_news.json */,
 				2BF9C6D71BC237880044450D /* Channel.h */,
 				2BF9C6D81BC237880044450D /* Channel.m */,
+				2BF9C6E31BC26EEC0044450D /* ChannelLabel.h */,
+				2BF9C6E41BC26EEC0044450D /* ChannelLabel.m */,
 			);
 			path = Channel;
 			sourceTree = "<group>";
@@ -373,6 +378,7 @@
 				2B03D6D21BBE562000F90593 /* NetworkTools.m in Sources */,
 				2B03D6CE1BBE36E800F90593 /* NewsTableViewController.m in Sources */,
 				2BF9C6DE1BC2392D0044450D /* HomeViewController.m in Sources */,
+				2BF9C6E51BC26EEC0044450D /* ChannelLabel.m in Sources */,
 				2BF765E41BBFB8D800F8021F /* NewsCell.m in Sources */,
 				2B03D6D91BBE5E1900F90593 /* NSArray+Log.m in Sources */,
 				2B03D6A81BBE343A00F90593 /* AppDelegate.m in Sources */,
