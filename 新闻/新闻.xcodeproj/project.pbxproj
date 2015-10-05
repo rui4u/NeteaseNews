@@ -18,6 +18,8 @@
 		2B03D6D51BBE59C400F90593 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B03D6D41BBE59C400F90593 /* News.m */; };
 		2B03D6D91BBE5E1900F90593 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B03D6D81BBE5E1900F90593 /* NSArray+Log.m */; };
 		2BF765E41BBFB8D800F8021F /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF765E31BBFB8D800F8021F /* NewsCell.m */; };
+		2BF9C6D31BC22DDB0044450D /* topic_news.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9C6D21BC22DDB0044450D /* topic_news.json */; };
+		2BF9C6D61BC22FAB0044450D /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9C6D51BC22FAB0044450D /* NSObject+Extension.m */; };
 		A3BD1099097D6B5CEEDE95C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7BA9BB936F08DC889B150F /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,9 @@
 		2B03D6D81BBE5E1900F90593 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 		2BF765E21BBFB8D800F8021F /* NewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
 		2BF765E31BBFB8D800F8021F /* NewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
+		2BF9C6D21BC22DDB0044450D /* topic_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topic_news.json; sourceTree = "<group>"; };
+		2BF9C6D41BC22FAB0044450D /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
+		2BF9C6D51BC22FAB0044450D /* NSObject+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
 		6D7BA9BB936F08DC889B150F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF0914EC31E4D0D54E6577C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +144,7 @@
 		2B03D6C81BBE36BD00F90593 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2BF9C6D01BC22DB50044450D /* Home */,
 				2B03D6C91BBE36BD00F90593 /* News */,
 				2B03D6CF1BBE55C600F90593 /* Tools */,
 			);
@@ -165,6 +171,8 @@
 				2B03D6D61BBE5E1900F90593 /* Log */,
 				2B03D6D01BBE562000F90593 /* NetworkTools.h */,
 				2B03D6D11BBE562000F90593 /* NetworkTools.m */,
+				2BF9C6D41BC22FAB0044450D /* NSObject+Extension.h */,
+				2BF9C6D51BC22FAB0044450D /* NSObject+Extension.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -176,6 +184,22 @@
 				2B03D6D81BBE5E1900F90593 /* NSArray+Log.m */,
 			);
 			path = Log;
+			sourceTree = "<group>";
+		};
+		2BF9C6D01BC22DB50044450D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9C6D11BC22DB50044450D /* Channel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2BF9C6D11BC22DB50044450D /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9C6D21BC22DDB0044450D /* topic_news.json */,
+			);
+			path = Channel;
 			sourceTree = "<group>";
 		};
 		72B1162A6BFC1A0DBFB96791 /* Pods */ = {
@@ -279,6 +303,7 @@
 			files = (
 				2B03D6B31BBE343A00F90593 /* LaunchScreen.xib in Resources */,
 				2B03D6CB1BBE36D800F90593 /* News.storyboard in Resources */,
+				2BF9C6D31BC22DDB0044450D /* topic_news.json in Resources */,
 				2B03D6B01BBE343A00F90593 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +362,7 @@
 				2B03D6D91BBE5E1900F90593 /* NSArray+Log.m in Sources */,
 				2B03D6A81BBE343A00F90593 /* AppDelegate.m in Sources */,
 				2B03D6A51BBE343A00F90593 /* main.m in Sources */,
+				2BF9C6D61BC22FAB0044450D /* NSObject+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

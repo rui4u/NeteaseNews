@@ -9,45 +9,8 @@
 #import "News.h"
 #import "NetworkTools.h"
 #import <objc/runtime.h>
+#import "NSObject+Extension.h"
 @implementation News
-+ (instancetype)newsWithDict:(NSDictionary *)dict {
-    id obj = [[self alloc] init];
-    
-    NSArray *propert = [self loadProperties];
-    for (NSString *key in propert) {
-        if (dict [key] !=nil) {
-            [obj setValue:dict[key] forKey:key];
-        }
-    }
-    
-    return obj;
-}
-//动态获取属性。利用运行时机制
-const char *kPropertiesKey = "kPropertiesKey";
-+ (NSArray *)loadProperties {
-    
-    NSArray *pList = objc_getAssociatedObject(self, kPropertiesKey);
-    if (pList != nil) {
-        return pList;
-    }
-
-    unsigned int count = 0;
-    objc_property_t *list = class_copyPropertyList([self class], &count);
-    NSMutableArray *arrayM = [NSMutableArray arrayWithCapacity:count];
-    for (int i = 0; i < count; ++i) {
-        objc_property_t p = list[i];
-
-        const char * cname =  property_getName(p);
-
-        [arrayM addObject:[NSString stringWithUTF8String:cname]];
-    }
-    free(list);
-    
-    objc_setAssociatedObject(self, kPropertiesKey, arrayM, OBJC_ASSOCIATION_COPY_NONATOMIC);
-    
-    return objc_getAssociatedObject(self, kPropertiesKey);
-
-}
 
 
 + (void)loadNewsListWithURLString:(NSString *)urlString finished:(void (^)(NSArray *))finished{
@@ -62,7 +25,7 @@ const char *kPropertiesKey = "kPropertiesKey";
         NSArray *array = responseObject[responseObject.keyEnumerator.nextObject];
         NSMutableArray *arrayM = [NSMutableArray arrayWithCapacity:array.count];
         for (NSDictionary *dict in array) {
-            [arrayM addObject:[self newsWithDict:dict]];
+            [arrayM addObject:[self ObjectWithDict:dict]];
         }
         NSLog(@"%@",arrayM);
         finished(arrayM);
