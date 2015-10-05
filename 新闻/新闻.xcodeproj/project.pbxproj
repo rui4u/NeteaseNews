@@ -20,6 +20,9 @@
 		2BF765E41BBFB8D800F8021F /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF765E31BBFB8D800F8021F /* NewsCell.m */; };
 		2BF9C6D31BC22DDB0044450D /* topic_news.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9C6D21BC22DDB0044450D /* topic_news.json */; };
 		2BF9C6D61BC22FAB0044450D /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9C6D51BC22FAB0044450D /* NSObject+Extension.m */; };
+		2BF9C6D91BC237880044450D /* Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9C6D81BC237880044450D /* Channel.m */; };
+		2BF9C6DE1BC2392D0044450D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9C6DD1BC2392D0044450D /* HomeViewController.m */; };
+		2BF9C6E21BC2394F0044450D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9C6E11BC2394F0044450D /* Home.storyboard */; };
 		A3BD1099097D6B5CEEDE95C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7BA9BB936F08DC889B150F /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +62,11 @@
 		2BF9C6D21BC22DDB0044450D /* topic_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topic_news.json; sourceTree = "<group>"; };
 		2BF9C6D41BC22FAB0044450D /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
 		2BF9C6D51BC22FAB0044450D /* NSObject+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
+		2BF9C6D71BC237880044450D /* Channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Channel.h; sourceTree = "<group>"; };
+		2BF9C6D81BC237880044450D /* Channel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Channel.m; sourceTree = "<group>"; };
+		2BF9C6DC1BC2392D0044450D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		2BF9C6DD1BC2392D0044450D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		2BF9C6E11BC2394F0044450D /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		6D7BA9BB936F08DC889B150F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF0914EC31E4D0D54E6577C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,6 +198,9 @@
 			isa = PBXGroup;
 			children = (
 				2BF9C6D11BC22DB50044450D /* Channel */,
+				2BF9C6DC1BC2392D0044450D /* HomeViewController.h */,
+				2BF9C6DD1BC2392D0044450D /* HomeViewController.m */,
+				2BF9C6E11BC2394F0044450D /* Home.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -198,6 +209,8 @@
 			isa = PBXGroup;
 			children = (
 				2BF9C6D21BC22DDB0044450D /* topic_news.json */,
+				2BF9C6D71BC237880044450D /* Channel.h */,
+				2BF9C6D81BC237880044450D /* Channel.m */,
 			);
 			path = Channel;
 			sourceTree = "<group>";
@@ -302,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B03D6B31BBE343A00F90593 /* LaunchScreen.xib in Resources */,
+				2BF9C6E21BC2394F0044450D /* Home.storyboard in Resources */,
 				2B03D6CB1BBE36D800F90593 /* News.storyboard in Resources */,
 				2BF9C6D31BC22DDB0044450D /* topic_news.json in Resources */,
 				2B03D6B01BBE343A00F90593 /* Images.xcassets in Resources */,
@@ -358,10 +372,12 @@
 				2B03D6D51BBE59C400F90593 /* News.m in Sources */,
 				2B03D6D21BBE562000F90593 /* NetworkTools.m in Sources */,
 				2B03D6CE1BBE36E800F90593 /* NewsTableViewController.m in Sources */,
+				2BF9C6DE1BC2392D0044450D /* HomeViewController.m in Sources */,
 				2BF765E41BBFB8D800F8021F /* NewsCell.m in Sources */,
 				2B03D6D91BBE5E1900F90593 /* NSArray+Log.m in Sources */,
 				2B03D6A81BBE343A00F90593 /* AppDelegate.m in Sources */,
 				2B03D6A51BBE343A00F90593 /* main.m in Sources */,
+				2BF9C6D91BC237880044450D /* Channel.m in Sources */,
 				2BF9C6D61BC22FAB0044450D /* NSObject+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
