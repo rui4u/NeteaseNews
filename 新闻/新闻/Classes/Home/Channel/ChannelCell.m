@@ -9,7 +9,7 @@
 #import "ChannelCell.h"
 #import "NewsTableViewController.h"
 @interface ChannelCell ()
-@property (nonatomic, strong) NewsTableViewController *newsVC;
+
 @end
 @implementation ChannelCell
 

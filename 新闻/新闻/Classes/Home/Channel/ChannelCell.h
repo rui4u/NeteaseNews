@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class NewsTableViewController ;
 @interface ChannelCell : UICollectionViewCell
 @property (nonatomic, strong) NSString *strURL;
+@property (nonatomic, strong) NewsTableViewController *newsVC;
 @end

@@ -17,6 +17,8 @@
 - (void)setStrURL:(NSString *)strURL {
     _strURL = strURL;
     //@"T1348647853363/0-20.html"
+    //清缓存
+    self.newsList = nil;
     NSLog(@"%@--",strURL);
     [News loadNewsListWithURLString:[NSString stringWithFormat:@"%@/0-20.html",strURL] finished:^(NSArray *newsList) {
         self.newsList = newsList;
@@ -53,6 +55,7 @@
    NewsCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
     cell.news = n;
     return cell;
+    
 }
 
 /*

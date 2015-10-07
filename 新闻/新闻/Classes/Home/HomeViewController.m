@@ -66,8 +66,16 @@
     
     ChannelCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CollectionCell" forIndexPath:indexPath];
     cell.backgroundColor = [UIColor colorWithRed:((float)arc4random_uniform(256) / 255.0) green:((float)arc4random_uniform(256) / 255.0) blue:((float)arc4random_uniform(256) / 255.0) alpha:1.0];
-    cell.strURL = [self.channelList[indexPath.item] tid];
-
+    cell.strURL = [self.channelList[indexPath.item] strURL];
+    //在代码开发时，如果出现多视图控制器的情况，一定要注意添加自控制器。
+    //提示：当前代码不会出现问题。
+    //但是：响应者链条的传递会出现不可预知的问题
+    if (![self.childViewControllers containsObject:cell.newsVC]) {
+        [self addChildViewController:cell.newsVC];
+    }
+    NSLog(@"%@",self.childViewControllers);
+    
+    
     return cell;
 }
 #pragma mark - 懒加载
