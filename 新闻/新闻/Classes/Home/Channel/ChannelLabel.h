@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+@protocol  ChannelLabelDelegate;
 
 @interface ChannelLabel : UILabel
+
 + (instancetype)channelLableWithTitle:(NSString *)title;
+@property (nonatomic, assign) CGFloat scale;
+@property (nonatomic, weak) id<ChannelLabelDelegate> delegete;
+@end
+
+@protocol ChannelLabelDelegate <NSObject>
+
+- (void)channelLableDidSelected:(ChannelLabel *)label;
+
 @end

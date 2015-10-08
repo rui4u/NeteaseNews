@@ -10,9 +10,10 @@
 #import "Channel.h"
 #import "ChannelLabel.h"
 #import "ChannelCell.h"
-@interface HomeViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface HomeViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,ChannelLabelDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *layout;
+@property (nonatomic, assign) NSInteger currentIndex;
 
 //频道数据
 @property (nonatomic, strong) NSArray *channelList;
@@ -22,6 +23,39 @@
 @end
 
 @implementation HomeViewController
+///  点击标签
+- (void)channelLableDidSelected:(ChannelLabel *)label {
+    self.currentIndex = label.tag;
+    NSIndexPath *path = [NSIndexPath indexPathForItem:self.currentIndex inSection:0 ];
+    [self.collectionView scrollToItemAtIndexPath:path atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:NO];
+}
+
+///  标签联动
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    ChannelLabel *currutLabel = self.channelView.subviews[self.currentIndex];
+     NSArray *indexPaths = [self.collectionView indexPathsForVisibleItems];
+    ChannelLabel *nextLabel = nil;
+    for (NSIndexPath *paths in indexPaths) {
+        if ( paths.item != self.currentIndex) {
+            nextLabel =self.channelView.subviews[paths.item];
+            break;
+        }
+    }
+    NSLog(@"从%zd到%zd",currutLabel.tag,nextLabel.tag);
+    float nextScale = ABS((float)self.collectionView.contentOffset.x / self.collectionView.bounds.size.width - self.currentIndex);
+    float currentScale = 1 - nextScale;
+    
+    NSLog(@"%f %f", currentScale, nextScale);
+    // 设置比例
+    currutLabel.scale = currentScale;
+    nextLabel.scale = nextScale;
+     self.currentIndex =scrollView.contentOffset.x/scrollView.bounds.size.width;
+
+}
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    
+    self.currentIndex =scrollView.contentOffset.x/scrollView.bounds.size.width;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -47,13 +81,19 @@
     CGFloat margin = 8.0;
     CGFloat x =margin;
     CGFloat h = self.channelView.bounds.size.height;
+    int i = 0;
     for (Channel * channel in self.channelList) {
         ChannelLabel *l = [ChannelLabel channelLableWithTitle:channel.tname];
         l.frame = CGRectMake(x, 0, l.bounds.size.width,h);
+        l.tag =i++;
+        l.delegete = self;
         x += l.frame.size.width;
         [self.channelView addSubview:l];
     }
     self.channelView.contentSize = CGSizeMake(x+margin, h);
+    self.currentIndex = 0 ;
+    ChannelLabel *l = self.channelView.subviews[0];
+    l.scale = 1;
 }
 
 
@@ -71,7 +111,7 @@
     //提示：当前代码不会出现问题。
     //但是：响应者链条的传递会出现不可预知的问题
     if (![self.childViewControllers containsObject:cell.newsVC]) {
-        [self addChildViewController:cell.newsVC];
+        [self addChildViewController:(UIViewController *)cell.newsVC];
     }
     NSLog(@"%@",self.childViewControllers);
     
